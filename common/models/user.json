@@ -1,0 +1,19 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+      "product": {
+      "type": "hasMany",
+      "model": "product",
+      "foreignKey": "ownerId"
+    }  
+    },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+    "dsMongodb": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "Tranings",
+    "name": "Mongodb",
+    "connector": "mongodb"
+  }
+}

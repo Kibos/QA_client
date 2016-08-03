@@ -1,0 +1,13 @@
+module.exports = function(Coffee) {
+   Coffee.greet = function(msg, cb) {
+      cb(null, 'Greetings... ' + msg);
+    }
+     
+    Coffee.remoteMethod(
+        'greet', 
+        {
+          accepts: {arg: 'msg', type: 'string'},
+          returns: {arg: 'greeting', type: 'string'}
+        }
+    );
+};
